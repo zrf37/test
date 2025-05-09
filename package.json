@@ -1,4 +1,18 @@
-"scripts": {
-  "build": "vite build",
-  "start": "node server.js"
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "A sample project",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "zrf37",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.3.0"
+  },
+  "devDependencies": {}
 }

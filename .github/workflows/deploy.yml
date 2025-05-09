@@ -1,0 +1,32 @@
+名称：部署到 Azure Web 应用
+
+
+  推：
+    分支：
+      - 主页
+
+工作：
+  构建和部署：
+    运行于: 最新版本的 Ubuntu
+
+    步骤输入：
+      - 名称: 结账代码
+        使用：actions/checkout@v3
+
+      - 名称: 设置 Node.js
+        使用： actions/setup-node@v3
+        与：
+          节点版本：'20'
+
+      - 名称: 安装依赖项
+        运行：npm install
+
+      - 名称: 构建前端
+        运行：npm run build
+
+      - 名称: 部署到 Azure Web 应用
+        使用：azure/webapps-deploy@v2
+        与:
+          应用名称：<你的Azure应用名称>
+          发布配置文件：${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          包: ./dist

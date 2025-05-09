@@ -1,18 +1,19 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "A sample project",
-  "main": "index.js",
+  "name": "my-vue3-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
+    "dev": "vite",
     "build": "vite build",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "zrf37",
-  "license": "ISC",
   "dependencies": {
-    "vite": "^4.3.0"
+    "vue": "^3.5.13"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "vite": "^6.2.4",
+    "vite-plugin-vue-devtools": "^7.7.2"
+  }
 }
